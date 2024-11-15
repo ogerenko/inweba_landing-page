@@ -1,0 +1,12 @@
+.footer {
+	@include content-padding-inline;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 112px;
+	width: 100%;
+
+	&__rights {
+		color: $main-color;
+	}
+}

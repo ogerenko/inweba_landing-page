@@ -1,0 +1,42 @@
+.sub-title-labels {
+	display: flex;
+	gap: 12px;
+
+	&__label-info {
+		background-color: $bg-color-labels;
+		height: 47px;
+		width: fit-content;
+		color: $main-text-color;
+		padding-inline: 16px;
+		border-radius: 45px;
+		display: flex;
+		gap: 8px;
+		align-items: center;
+
+		font-size: 18px;
+		font-weight: 500;
+
+		&::before {
+			content: '';
+			height: 24px;
+			width: 24px;
+			position: relative;
+		}
+
+		&--time::before {
+			background-image: url(../images/icons/time__icon.svg);
+		}
+
+		&--tv::before {
+			background-image: url(../images/icons/tv__icon.svg);
+		}
+
+		&--book::before {
+			background-image: url(../images/icons/book__icon.svg);
+		}
+
+		&--modules::before {
+			background-image: url(../images/icons/module__icon.svg);
+		}
+	}
+}

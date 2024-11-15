@@ -1,0 +1,24 @@
+.price-course {
+	display: flex;
+	gap: 16px;
+
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 45px;
+	text-align: left;
+	text-transform: uppercase;
+	color: $main-color;
+
+	&__label {
+		display: flex;
+		gap: 16px;
+
+		&::after {
+			content: '';
+			position: relative;
+			height: 100%;
+			width: 2px;
+			background-color: $main-color;
+		}
+	}
+}

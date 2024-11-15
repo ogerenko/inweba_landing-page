@@ -1,0 +1,9 @@
+.advantages {
+	background-color: $bg-color-light-blue;
+	border-radius: 0;
+
+	&__adv-blocks {
+		@include content-padding-inline;
+		padding-block: 70px;
+	}
+}

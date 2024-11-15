@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+.page {
+	scroll-behavior: smooth;
+	scroll-padding-top: 80px;
+
+	&__body {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+
+		background-color: $white-text-color;
+
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 16px;
+		color: $main-text-color;
+		// have to delete color in child components
+	}
+}

@@ -1,0 +1,54 @@
+.card-tm {
+	border: 1px solid $main-color;
+	padding: 20px;
+	height: 265px;
+	display: flex;
+	gap: 20px;
+
+	&__photo {
+		overflow: hidden;
+		width: 200px;
+		min-width: 200px;
+	}
+
+	&__image {
+		width: 100%;
+		object-fit: cover;
+
+		@include hover-image;
+	}
+
+	&__info-person {
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+	}
+
+	&__name {
+		font-family: 'Poppins', sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 30px;
+		color: $main-text-color;
+	}
+
+	&__role {
+		line-height: 24px;
+		color: $secondary-text-color;
+	}
+
+	&__stars {
+		display: flex;
+	}
+
+	&__star {
+		height: 24px;
+		width: 24px;
+		background-image: url(../images/icons/star_icon.svg);
+	}
+
+	&__description {
+		margin-top: 14px;
+		line-height: 24px;
+	}
+}

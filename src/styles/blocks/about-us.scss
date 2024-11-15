@@ -1,0 +1,8 @@
+.about-us {
+	@include content-padding-inline;
+	padding-block: 50px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}

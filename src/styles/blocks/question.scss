@@ -1,0 +1,52 @@
+.question {
+	border: 1px solid $main-color;
+	padding: 40px;
+	display: flex;
+	gap: 40px;
+	justify-content: space-between;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__value {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 30px;
+
+		&--active {
+			display: flex;
+			flex-direction: column;
+
+			&::after {
+				content: '';
+				width: 100%;
+				height: 1px;
+				background-color: $main-color;
+				position: relative;
+				bottom: -30px;
+			}
+		}
+	}
+
+	&__answer {
+		padding-top: 30px;
+	}
+
+	&__button-answer {
+		min-width: 40px;
+		height: 40px;
+		width: 40px;
+		background-image: url(../images/icons/button-plus__icon.svg);
+
+		&--active {
+			background-image: url(../images/icons/button-minus__icon.svg);
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

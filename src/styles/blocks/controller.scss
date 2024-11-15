@@ -1,0 +1,41 @@
+.controller {
+	height: 56px;
+	border: 1px solid $controller-border;
+	border-radius: 100px;
+	padding-inline: 14px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+
+	&__prev {
+		height: 32px;
+		width: 32px;
+
+		&--disabled {
+			background-image: url(../images/icons/button-prev--disabled__icon.svg);
+		}
+	}
+
+	&__next {
+		height: 32px;
+		width: 32px;
+		background-image: url(../images/icons/button-next__icon.svg);
+	}
+
+	&__pagination {
+		display: flex;
+		gap: 2px;
+	}
+
+	&__indicator {
+		width: 13px;
+		height: 4px;
+		border-radius: 20px;
+		background-color: $controller-indicator;
+
+		&--active {
+			width: 24px;
+			background-color: $main-color;
+		}
+	}
+}

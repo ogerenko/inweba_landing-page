@@ -1,0 +1,12 @@
+.block-course {
+	border: 2px solid $main-color;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	&__button-join {
+		min-width: 216px;
+		width: 216px;
+	}
+}

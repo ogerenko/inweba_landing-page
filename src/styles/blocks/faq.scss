@@ -1,0 +1,30 @@
+.faq {
+	@include content-padding-inline;
+	padding-block: 50px;
+
+	@include page-grid;
+	row-gap: 20px;
+
+	&__title {
+		font-family: 'Poppins', sans-serif;
+		font-size: 42px;
+		font-weight: 500;
+		line-height: 63px;
+		text-transform: uppercase;
+		color: $main-color;
+
+		grid-column: 1 / -1;
+	}
+
+	&__questions-container {
+		grid-column: 1 / 8;
+
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__ask-form-container {
+		grid-column: 8 / -1;
+	}
+}

@@ -1,0 +1,52 @@
+.blocks-about-us {
+	@include page-grid;
+	row-gap: 30px;
+
+	&__picture-block {
+		width: 100%;
+		height: 575px;
+
+		grid-column: 1 / 7;
+		grid-row: span 2;
+		overflow: hidden;
+	}
+
+	&__image {
+		object-fit: cover;
+
+		width: 100%;
+		height: 100%;
+
+		@include hover-image;
+	}
+
+	&__info-block-au {
+		background-color: $main-color;
+		color: $white-text-color;
+		display: flex;
+		flex-direction: column;
+		padding: 34px;
+
+		&--top {
+			width: 100%;
+			height: 334px;
+			gap: 20px;
+
+			grid-column: 7 / -1;
+		}
+
+		&--bottom-left {
+			grid-column: span 3;
+			height: 211px;
+			padding-inline: 75px;
+			text-align: center;
+		}
+
+		&--bottom-right {
+			grid-column: span 3;
+			height: 211px;
+			padding-inline: 75px;
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.section-db {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+
+	&__title {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 27px;
+		color: $main-text-color;
+	}
+}

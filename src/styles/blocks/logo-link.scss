@@ -1,0 +1,11 @@
+.logo-link {
+	background-image: url(../images/logo/Logo.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 48px;
+	height: 48px;
+	min-width: 48px;
+
+	@include hover;
+}

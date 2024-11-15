@@ -1,3 +1,40 @@
-body {
-  margin: 0;
+@import 'utils/variables';
+@import 'utils/mixin';
+
+@import 'blocks/page';
+@import 'blocks/top-bar';
+@import 'blocks/nav';
+@import 'blocks/button';
+@import 'blocks/head-bottom';
+@import 'blocks/info-block';
+@import 'blocks/header';
+@import 'blocks/advantages';
+@import 'blocks/adv-blocks';
+@import 'blocks/adv-content';
+@import 'blocks/about-us';
+@import 'blocks/head-about-us';
+@import 'blocks/blocks-about-us';
+@import 'blocks/info-block-au';
+@import 'blocks/our-courses';
+@import 'blocks/block-course';
+@import 'blocks/head-course';
+@import 'blocks/sub-title-labels';
+@import 'blocks/description-block';
+@import 'blocks/section-db';
+@import 'blocks/list-db';
+@import 'blocks/price-course';
+@import 'blocks/contact-us';
+@import 'blocks/testimonials';
+@import 'blocks/cards-container';
+@import 'blocks/card-tm';
+@import 'blocks/controller';
+@import 'blocks/faq';
+@import 'blocks/question';
+@import 'blocks/ask-form';
+@import 'blocks/footer';
+@import 'blocks/logo-link';
+@import 'blocks/dropdown';
+
+iframe {
+	display: none;
 }

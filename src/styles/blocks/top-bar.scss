@@ -1,0 +1,24 @@
+.top-bar {
+	display: flex;
+	align-items: center;
+	gap: 48px;
+	height: 80px;
+	background-color: $white-text-color;
+	border-radius: 0;
+	position: fixed;
+	inset: 0;
+	z-index: 100;
+
+	@include content-padding-inline;
+
+	&__nav {
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+	}
+
+	&__login-button {
+		min-width: 110px;
+		height: 58px;
+	}
+}

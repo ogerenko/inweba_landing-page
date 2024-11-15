@@ -1,0 +1,25 @@
+.list-db {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+
+	&__item {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 27px;
+		color: $main-text-color;
+		display: flex;
+		gap: 16px;
+
+		&::before {
+			content: '';
+			width: 24px;
+			height: 24px;
+			position: relative;
+			background-image: url(../images/icons/check-mark__icon.svg);
+		}
+	}
+}
